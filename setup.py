@@ -43,6 +43,13 @@ setup(name='kirahhe',
       packages=['kirahhe'],
       include_package_data=True,
       scripts=['bin/kirahhe'],
+      classifiers=[
+          "Programming Language :: Python :: 3",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: POSIX :: Linux",
+          "Topic :: Software Development :: Debuggers",
+          "Topic :: System :: Monitoring"
+      ],
       install_requires=extract_requirements(os.path.join(PACKAGE_ROOT_PATH, 'requirements', 'base.txt')),
       test_suite='nose.collector',
       tests_require=extract_requirements(os.path.join(PACKAGE_ROOT_PATH, 'requirements', 'test.txt')),
